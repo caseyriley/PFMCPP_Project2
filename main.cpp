@@ -15,15 +15,18 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of the 6 major primitive types available in C++  here:
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+ bool
+
+ char
+
+ int
+
+ float
+
+ double
+
+ void
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
@@ -56,13 +59,38 @@ video: Chapter 2 - Part 3
 
 //2)
 void variableDeclarations()
-{
-    //example:
-    int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+{   
+    int x = 7;
 
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    int things = 99;
+
+    int money = 9;
+
+    bool loggedIn = false;
+
+    bool nomad = true;
+
+    bool admin = false;
+
+    char lastChar = 'z';
+
+    char firstChar = 'a';
+
+    char randomChar = 'g';
+
+    float num1 = 3.3333333f;
+
+    float num2 = 3.0f;
+
+    float num3 = 5.567f;
+
+    double num4 = 3.37474;
+
+    double num5 = 5.3;
+
+    double num6 = 6.789;
+
+    ignoreUnused(x, things, money, loggedIn, nomad, admin, lastChar, firstChar, randomChar, num1, num2, num3, num4, num5, num6); 
 }
 
 /*
@@ -79,43 +107,84 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+int makeDinner(int numIngredients = 7, int temperature = 350)
+{
+    ignoreUnused(numIngredients, temperature);
+    return {};
+}
 
 /*
  2)
  */
-
+int howMuchMoneyLeft(int balance = 1000, int spent = 0, int deposits = 5)
+{
+    ignoreUnused(balance, spent, deposits);
+    return {};
+}
 /*
  3)
  */
-
+bool isLoggedIn(int id = 1)
+{
+    ignoreUnused(id);
+    return {};
+}
 /*
  4)
  */
-
+char serial(char firstChar = 'C', char secondChar = 'F', int num1 = 6, int num2 = 7)
+{
+    ignoreUnused(firstChar, secondChar, num1, num2);
+    return {};
+}
 /*
  5)
  */
-
+int numCats(int kittens = 99, int adultCats = 2)
+{
+    ignoreUnused(kittens, adultCats);
+    return {};
+}
 /*
  6)
  */
-
+int jungleDescription(int animalTypes = 20000, int plantTypes = 10000, int ecosystems = 5)
+{
+    ignoreUnused(animalTypes, plantTypes, ecosystems);
+    return {};
+}
 /*
  7)
  */
-
+int addScore(int firstRound = 5, int secondRound = 5, int thirdRound = 5, int fourthRound = 5)
+{
+    ignoreUnused(firstRound, secondRound, thirdRound, fourthRound);
+    return {};
+}
 /*
  8)
  */
-
+bool onTime(int id = 1, int startTime = 900, int timeStamp = 12000)
+{
+    ignoreUnused(id, startTime, timeStamp);
+    return {};
+}
 /*
  9)
  */
-
+int warpDrive(int speed = 9, char destination = 'z', double warpFactor = 9.9999, float wobbleFactor = 7373.5f)
+{
+    ignoreUnused(speed, destination, warpFactor, wobbleFactor);
+    return {};
+}
 /*
  10)
  */
-
+bool includesOneChar(char firstChar = 'a', char secondChar = 'b', char thirdChar = 'c')
+{
+    ignoreUnused(firstChar, secondChar, thirdChar);
+    return {};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -136,27 +205,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto dinner = makeDinner(7, 400);
     //2)
-    
+    int balance = howMuchMoneyLeft(800, 250, 119);
     //3)
-    
+    bool loggedIn = isLoggedIn(55);
     //4)
-    
+    auto productId = serial('f','q', 3, 9);
     //5)
-    
+    int felines = numCats(13, 9);
     //6)
-    
+    auto jungle = jungleDescription(30000, 90000, 10);
     //7)
-    
+    int score = addScore(4, 12, 3, 2);
     //8)
-    
+    bool lateOrNot = onTime(12, 8000, 6082021);
     //9)
-    
+    int warpPower = warpDrive(70000, 'f', 5.999999, 5.55f);
     //10)
+    bool hasLetter = includesOneChar('e', 'g', 'c');
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, dinner, balance, loggedIn, productId, felines, jungle, score, lateOrNot, warpPower, hasLetter);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
