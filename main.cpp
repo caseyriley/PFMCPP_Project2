@@ -107,7 +107,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-int makeDinner(int numIngredients, int temperature)
+int makeDinner(int numIngredients = 7, int temperature = 350)
 {
     ignoreUnused(numIngredients, temperature);
     return {};
@@ -116,7 +116,7 @@ int makeDinner(int numIngredients, int temperature)
 /*
  2)
  */
-int howMuchMoneyLeft(int balance, int spent, int deposits)
+int howMuchMoneyLeft(int balance = 1000, int spent = 0, int deposits = 5)
 {
     ignoreUnused(balance, spent, deposits);
     return {};
@@ -124,7 +124,7 @@ int howMuchMoneyLeft(int balance, int spent, int deposits)
 /*
  3)
  */
-bool isLoggedIn(int id)
+bool isLoggedIn(int id = 1)
 {
     ignoreUnused(id);
     return {};
@@ -132,7 +132,7 @@ bool isLoggedIn(int id)
 /*
  4)
  */
-char serial(char firstChar, char secondChar, int num1, int num2)
+char serial(char firstChar = 'C', char secondChar = 'F', int num1 = 6, int num2 = 7)
 {
     ignoreUnused(firstChar, secondChar, num1, num2);
     return {};
@@ -140,7 +140,7 @@ char serial(char firstChar, char secondChar, int num1, int num2)
 /*
  5)
  */
-int numCats(int kittens, int adultCats)
+int numCats(int kittens = 99, int adultCats = 2)
 {
     ignoreUnused(kittens, adultCats);
     return {};
@@ -148,7 +148,7 @@ int numCats(int kittens, int adultCats)
 /*
  6)
  */
-int jungleDescription(int animalTypes, int plantTypes, int ecosystems)
+int jungleDescription(int animalTypes = 20000, int plantTypes = 10000, int ecosystems = 5)
 {
     ignoreUnused(animalTypes, plantTypes, ecosystems);
     return {};
@@ -156,7 +156,7 @@ int jungleDescription(int animalTypes, int plantTypes, int ecosystems)
 /*
  7)
  */
-int addScore(int firstRound, int secondRound, int thirdRound, int fourthRound)
+int addScore(int firstRound = 5, int secondRound = 5, int thirdRound = 5, int fourthRound = 5)
 {
     ignoreUnused(firstRound, secondRound, thirdRound, fourthRound);
     return {};
@@ -164,7 +164,7 @@ int addScore(int firstRound, int secondRound, int thirdRound, int fourthRound)
 /*
  8)
  */
-bool onTime(int id, int startTime, int timeStamp)
+bool onTime(int id = 1, int startTime = 900, int timeStamp = 12000)
 {
     ignoreUnused(id, startTime, timeStamp);
     return {};
@@ -172,7 +172,7 @@ bool onTime(int id, int startTime, int timeStamp)
 /*
  9)
  */
-int warpDrive(int speed, char destination, double warpFactor, float wobbleFactor)
+int warpDrive(int speed = 9, char destination = 'z', double warpFactor = 9.9999, float wobbleFactor = 7373.5f)
 {
     ignoreUnused(speed, destination, warpFactor, wobbleFactor);
     return {};
@@ -180,7 +180,7 @@ int warpDrive(int speed, char destination, double warpFactor, float wobbleFactor
 /*
  10)
  */
-bool includesOneChar(char firstChar, char secondChar, char thirdChar)
+bool includesOneChar(char firstChar = 'a', char secondChar = 'b', char thirdChar = 'c')
 {
     ignoreUnused(firstChar, secondChar, thirdChar);
     return {};
