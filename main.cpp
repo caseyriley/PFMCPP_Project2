@@ -110,6 +110,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 int makeDinner(int numIngredients, int temperature)
 {
     ignoreUnused(numIngredients, temperature);
+    return {};
 }
 
 /*
@@ -118,6 +119,7 @@ int makeDinner(int numIngredients, int temperature)
 int howMuchMoneyLeft(int balance, int spent, int deposits)
 {
     ignoreUnused(balance, spent, deposits);
+    return {};
 }
 /*
  3)
@@ -125,6 +127,7 @@ int howMuchMoneyLeft(int balance, int spent, int deposits)
 bool isLoggedIn(int id)
 {
     ignoreUnused(id);
+    return {};
 }
 /*
  4)
@@ -132,6 +135,7 @@ bool isLoggedIn(int id)
 char serial(char firstChar, char secondChar, int num1, int num2)
 {
     ignoreUnused(firstChar, secondChar, num1, num2);
+    return {};
 }
 /*
  5)
@@ -139,6 +143,7 @@ char serial(char firstChar, char secondChar, int num1, int num2)
 int numCats(int kittens, int adultCats)
 {
     ignoreUnused(kittens, adultCats);
+    return {};
 }
 /*
  6)
@@ -146,6 +151,7 @@ int numCats(int kittens, int adultCats)
 int jungleDescription(int animalTypes, int plantTypes, int ecosystems)
 {
     ignoreUnused(animalTypes, plantTypes, ecosystems);
+    return {};
 }
 /*
  7)
@@ -153,6 +159,7 @@ int jungleDescription(int animalTypes, int plantTypes, int ecosystems)
 int addScore(int firstRound, int secondRound, int thirdRound, int fourthRound)
 {
     ignoreUnused(firstRound, secondRound, thirdRound, fourthRound);
+    return {};
 }
 /*
  8)
@@ -160,12 +167,14 @@ int addScore(int firstRound, int secondRound, int thirdRound, int fourthRound)
 bool onTime(int id, int startTime, int timeStamp)
 {
     ignoreUnused(id, startTime, timeStamp);
+    return {};
 }
 /*
  9)
  */
 int warpDrive(int speed, char destination, double warpFactor, float wobbleFactor){
     ignoreUnused(speed, destination, warpFactor, wobbleFactor);
+    return {};
 }
 /*
  10)
@@ -173,6 +182,7 @@ int warpDrive(int speed, char destination, double warpFactor, float wobbleFactor
 bool includesOneChar(char firstChar, char secondChar, char thirdChar)
 {
     ignoreUnused(firstChar, secondChar, thirdChar);
+    return {};
 }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
