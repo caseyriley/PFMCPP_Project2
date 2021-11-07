@@ -172,7 +172,8 @@ bool onTime(int id, int startTime, int timeStamp)
 /*
  9)
  */
-int warpDrive(int speed, char destination, double warpFactor, float wobbleFactor){
+int warpDrive(int speed, char destination, double warpFactor, float wobbleFactor)
+{
     ignoreUnused(speed, destination, warpFactor, wobbleFactor);
     return {};
 }
